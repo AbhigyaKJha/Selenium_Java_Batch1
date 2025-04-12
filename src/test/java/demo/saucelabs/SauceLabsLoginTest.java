@@ -29,7 +29,7 @@ public class SauceLabsLoginTest extends BaseTest {
 
 	@Test(dataProviderClass = Data.class, dataProvider = "data")
 	public void verifyLoginWithInValidCredentials(String UserName, String Password) throws InterruptedException {
-		ExtentReportManager.getExtentTest().assignAuthor("Bipin");
+		ExtentReportManager.getExtentTest().assignAuthor("Abhigya");
 		SaucelabsLoginPage loginPage = new SaucelabsLoginPage();
 		loginPage.doLoginWithInvalidCredentials(UserName, Password);
 
