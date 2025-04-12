@@ -14,7 +14,7 @@ public class Data extends BaseTest {
 		// Getting the Sheetname from the className
 		String sheetName =m.getDeclaringClass().getSimpleName();
 		
-		System.out.println("Sheet Name IS-->" +sheetName);
+		System.out.println("Sheet Name-->" +sheetName);
 		// get the total number of rows in the sheet
 		int numberOfRows = excel.getRowCount(sheetName);
 		System.out.println("Number Of ROws->"+numberOfRows);
