@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="env" value="qa"/>
+  <listeners>
+    <listener class-name="listeners.TestListners"/>
+  </listeners>
+  <test parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="demo.saucelabs.SauceLabsLoginTest">
+        <methods>
+          <include name="verifyLoginWithInValidCredentials"/>
+          <include name="setUp"/>
+          <include name="shutDown"/>
+          <include name="beforeSuite"/>
+          <include name="verifyLoginWithValidCredentials"/>
+        </methods>
+      </class> <!-- demo.saucelabs.SauceLabsLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
